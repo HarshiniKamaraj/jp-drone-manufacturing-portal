@@ -141,7 +141,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
           <div className="space-y-4">
             {/* Part Selection */}
             <div>
-              <label htmlFor="partId" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="partId" className="block text-sm font-medium text-gray-700 bg-white">
                 Part <span className="text-red-500">*</span>
               </label>
               <select
@@ -149,7 +149,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
                 name="partId"
                 value={formData.partId}
                 onChange={handleChange}
-                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm ${
+                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white ${
                   errors.partId ? 'border-red-500' : ''
                 }`}
               >
@@ -165,7 +165,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
 
             {/* Operator ID */}
             <div>
-              <label htmlFor="operatorId" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="operatorId" className="block text-sm font-medium text-gray-700 bg-white">
                 Operator ID <span className="text-red-500">*</span>
               </label>
               <input
@@ -175,7 +175,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
                 value={formData.operatorId}
                 onChange={handleChange}
                 placeholder="e.g., OP-007"
-                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm ${
+                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white ${
                   errors.operatorId ? 'border-red-500' : ''
                 }`}
               />
@@ -185,7 +185,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
             {/* Status (only for editing) */}
             {isEditing && (
               <div>
-                <label htmlFor="status" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="status" className="block text-sm font-medium text-gray-700 bg-white">
                   Status
                 </label>
                 <select
@@ -193,7 +193,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
                   name="status"
                   value={formData.status}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white"
                 >
                   <option value="Pending">Pending</option>
                   <option value="Printing">Printing</option>
@@ -206,7 +206,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
 
             {/* Start Time */}
             <div>
-              <label htmlFor="startTime" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="startTime" className="block text-sm font-medium text-gray-700 bg-white">
                 Start Time
               </label>
               <input
@@ -215,7 +215,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
                 name="startTime"
                 value={formatDateForInput(formData.startTime)}
                 onChange={handleDateChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white"
               />
               <p className="mt-1 text-xs text-gray-500">
                 Leave blank for jobs that haven't started yet
@@ -224,7 +224,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
 
             {/* Estimated Completion */}
             <div>
-              <label htmlFor="estimatedCompletion" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="estimatedCompletion" className="block text-sm font-medium text-gray-700 bg-white">
                 Estimated Completion
               </label>
               <input
@@ -233,7 +233,7 @@ const PrintJobFormModal: FC<PrintJobFormModalProps> = ({
                 name="estimatedCompletion"
                 value={formatDateForInput(formData.estimatedCompletion)}
                 onChange={handleDateChange}
-                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm ${
+                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white ${
                   errors.estimatedCompletion ? 'border-red-500' : ''
                 }`}
               />

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
-import db, { PrintJob, Part } from '@services/db/dbService'
+import db, { PrintJob } from '@services/db/dbService'
 import PrintJobTable from './components/PrintJobTable'
 import PrintJobFormModal from './components/PrintJobFormModal'
 import { PlusIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline'
@@ -183,14 +183,14 @@ const PrintQueue = () => {
       {/* Filters */}
       <div className="flex flex-wrap gap-4">
         <div>
-          <label htmlFor="statusFilter" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="statusFilter" className="block text-sm font-medium text-gray-700 mb-1 bg-white">
             Filter by Status
           </label>
           <select
             id="statusFilter"
             value={filterStatus}
             onChange={(e) => setFilterStatus(e.target.value)}
-            className="rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
+            className="rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white"
           >
             <option value="all">All Statuses</option>
             <option value="Pending">Pending</option>
@@ -202,14 +202,14 @@ const PrintQueue = () => {
         </div>
 
         <div>
-          <label htmlFor="operatorFilter" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="operatorFilter" className="block text-sm font-medium text-gray-700 mb-1 bg-white">
             Filter by Operator
           </label>
           <select
             id="operatorFilter"
             value={filterOperator}
             onChange={(e) => setFilterOperator(e.target.value)}
-            className="rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm"
+            className="rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm bg-white"
           >
             <option value="all">All Operators</option>
             {operators.map(operator => (
