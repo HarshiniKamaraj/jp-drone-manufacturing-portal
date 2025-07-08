@@ -52,7 +52,7 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Sidebar - Desktop */}
       <aside className="hidden md:flex flex-col w-64 bg-white border-r border-gray-200">
         <div className="p-4 border-b border-gray-200">
-          <h1 className="text-xl font-bold text-gray-800">JivanPakshi</h1>
+          <h1 className="text-xl font-bold text-gray-800">Jivan Pakshi</h1>
         </div>
         <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
           <NavItem to="/" icon={<ChartBarIcon />} label="Dashboard" />
@@ -74,7 +74,7 @@ const Layout = ({ children }: LayoutProps) => {
 
       {/* Mobile menu button */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-20 bg-white border-b border-gray-200 px-4 py-2 flex items-center justify-between">
-        <h1 className="text-lg font-bold text-gray-800">JivanPakshi</h1>
+        <h1 className="text-lg font-bold text-gray-800">Jivan Pakshi</h1>
         <button 
           onClick={toggleMobileMenu}
           className="p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none"
@@ -88,7 +88,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="md:hidden fixed inset-0 z-10 bg-gray-800 bg-opacity-50">
           <div className="fixed inset-y-0 left-0 w-64 bg-white shadow-lg">
             <div className="p-4 border-b border-gray-200 flex justify-between items-center">
-              <h1 className="text-lg font-bold text-gray-800">JivanPakshi</h1>
+              <h1 className="text-lg font-bold text-gray-800">Jivan Pakshi</h1>
               <button 
                 onClick={toggleMobileMenu}
                 className="p-1 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none"
