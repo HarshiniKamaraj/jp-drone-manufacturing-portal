@@ -52,7 +52,7 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Sidebar - Desktop */}
       <aside className="hidden md:flex flex-col w-64 bg-white border-r border-gray-200">
         <div className="p-4 border-b border-gray-200">
-          <h1 className="text-xl font-bold text-gray-800">Drone Manufacturing</h1>
+          <h1 className="text-xl font-bold text-gray-800">JivanPakshi</h1>
         </div>
         <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
           <NavItem to="/" icon={<ChartBarIcon />} label="Dashboard" />
